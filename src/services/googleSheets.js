@@ -1,9 +1,14 @@
+const path = require('path');
 const { google } = require('googleapis');
 
 const auth = new google.auth.GoogleAuth({
-  keyFile: './files/google-service-account.json',
+  keyFile: path.join(
+    __dirname,
+    '../files/google-service-account.json'
+  ),
   scopes: ['https://www.googleapis.com/auth/spreadsheets']
 });
+
 const sheets = google.sheets({
   version: 'v4',
   auth
