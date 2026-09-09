@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "dotenv": "^17.4.2",
-    "fastify": "^5.12.3"
+    "fastify": "^5.12.3",
+    "googleapis": "^178.0.0"
   }
 }
